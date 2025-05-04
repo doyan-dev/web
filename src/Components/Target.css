@@ -1,0 +1,92 @@
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .t1 {
+    font-size: 18px;
+    color: #666;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .t2 {
+    font-size: 36px;
+    color: #1a2e77;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .all-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .container:nth-child(odd) {
+    margin-top: 50px;
+  }
+  
+  .container:nth-child(even) {
+    margin-top: 0;
+  }
+  
+  .con-text {
+    font-size: 24px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .t4 {
+    font-size: 16px;
+    color: #666;
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .container img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .view-button-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .view-button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #1a2e77;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-button:hover {
+    background-color: #14235b;
+  }

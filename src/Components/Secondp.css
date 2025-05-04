@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* First section */
+  .firstfeatures {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f4f4f4;
+  }
+  .first {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .first:hover {
+    transform: scale(1.05);
+  }
+  .fc {
+    width: 45%;
+    padding-left: 20px;
+  }
+  .t1 {
+    font-size: 1.5 rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  .t2 {
+    font-size: 0.5rem;
+    
+    color: #555;
+  }
+  
+  /* Second section */
+  .secondfeatures {
+    display: flex;
+    justify-content: space-between;
+    /* Align at top so paragraph+button fall right below title */
+    align-items: flex-start;
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  .second {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .second:hover {
+    transform: scale(1.05);
+  }
+  /* Make sure the fc on both sections remains a vertical stack */
+  .secondfeatures .fc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 45%;
+    padding-left: 20px;
+    text-align: right;
+  }
+  .t3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .button {
+    margin-top: 20px;
+  }
+  .primary-button {
+    background-color:rgb(5, 13, 20);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .primary-button:hover {
+    background-color:rgb(31, 44, 57);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .firstfeatures,
+    .secondfeatures {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .first,
+    .second {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+    .fc {
+      width: 80%;
+      padding-left: 0;
+      align-items: center;
+    }
+    .secondfeatures .fc {
+      text-align: center;
+    }
+  }
